@@ -1,51 +1,72 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teerandaz Labs LLP</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body { margin:0; font-family:Arial,sans-serif; background:#f8f9fa; color:#333; }
-        header { background:#0d2b4e; color:white; text-align:center; padding:20px; }
-        .logo { max-width:180px; }
-        h1 { margin:10px 0 5px; }
-        .hero { text-align:center; padding:40px 20px; background:white; }
-        .video { max-width:800px; margin:30px auto; }
-        .video iframe { width:100%; height:450px; border:none; }
-        .services { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; padding:40px 20px; }
-        .service { text-align:center; width:160px; }
-        .service img { width:90px; height:90px; border-radius:50%; object-fit:cover; }
-        .footer { background:#0d2b4e; color:white; text-align:center; padding:20px; font-size:0.9em; }
+        body { margin:0; font-family:Arial,sans-serif; background:#f8f9fa; }
+        header { background:#0d2b4e; color:white; padding:20px 0; }
+        .logo { max-height:120px; }
+        h1 { font-size:2.5rem; margin:0; }
+        .tagline { font-size:1.2rem; color:#ccc; }
+        .hero { background:white; padding:40px 0; text-align:center; }
+        .video iframe { width:100%; max-width:900px; height:500px; border:none; }
     </style>
 </head>
 <body>
 
     <header>
-        <img src="static/logo.jpeg" alt="Teerandaz Labs Logo" class="logo">
-        <h1>TEERANDAZ LABS LLP</h1>
-        <p>PRECISION TECHNOLOGY</p>
+        <div class="container text-center">
+            <img src="logo.jpeg" alt="Teerandaz Labs Logo" class="logo mb-3">
+            <h1>TEERANDAZ LABS LLP</h1>
+            <p class="tagline">PRECISION TECHNOLOGY</p>
+        </div>
     </header>
 
     <div class="hero">
-        <h2>Welcome to Teerandaz Labs</h2>
-        
-        <div class="video">
-            <iframe src="https://www.youtube.com/embed/i3NZxhVBQCs" 
-                    title="Teerandaz Labs" allowfullscreen></iframe>
+        <div class="container">
+            <h2 class="mb-4">Welcome to Teerandaz Labs</h2>
+            
+            <div class="video mx-auto">
+                <iframe src="https://www.youtube.com/embed/i3NZxhVBQCs" 
+                        title="Teerandaz Labs" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 
-    <div class="services">
-        <div class="service"><img src="logo.jpeg" alt="Embedded"><p>Embedded Systems</p></div>
-        <div class="service"><img src="logo.jpeg" alt="IoT"><p>IoT</p></div>
-        <div class="service"><img src="logo.jpeg" alt="Electrical"><p>Electrical & Pumps</p></div>
-        <div class="service"><img src="logo.jpeg" alt="Software"><p>Software Development</p></div>
+    <div class="container my-5">
+        <div class="row justify-content-center g-4">
+            <div class="col-6 col-md-3 text-center">
+                <img src="logo.jpeg" alt="Embedded" class="rounded-circle mb-2" style="width:100px;height:100px;object-fit:cover;">
+                <p>Embedded Systems</p>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <img src="logo.jpeg" alt="IoT" class="rounded-circle mb-2" style="width:100px;height:100px;object-fit:cover;">
+                <p>IoT</p>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <img src="logo.jpeg" alt="Electrical" class="rounded-circle mb-2" style="width:100px;height:100px;object-fit:cover;">
+                <p>Electrical & Pumps</p>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <img src="logo.jpeg" alt="Software" class="rounded-circle mb-2" style="width:100px;height:100px;object-fit:cover;">
+                <p>Software Development</p>
+            </div>
+        </div>
     </div>
 
-    <div class="footer">
+    <footer class="bg-dark text-white text-center py-4">
         teerandazlabs@gmail.com | +91-9993542791 | GSTIN: 12ABCDE3456F1Z5<br>
         DPIIT Recognised • © 2026 Teerandaz Labs LLP
-    </div>
+    </footer>
 
 </body>
 </html>
+```
+
+**Done.**  
+Logo is now bigger and properly placed at the top.  
+Replace your file with this code. Image should show correctly.
