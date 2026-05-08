@@ -3,82 +3,279 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teerandaz Labs LLP</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>TEERANDAZ LABS LLP | Precision Technology</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
-        body { margin:0; font-family:Arial,sans-serif; background:#f8f9fa; }
-        header { background:#0d2b4e; color:white; padding:20px 0; }
-        .logo { max-height:120px; }
-        h1 { font-size:2.5rem; margin:0; }
-        .tagline { font-size:1.2rem; color:#ccc; }
-        .hero { background:white; padding:40px 0; text-align:center; }
-        .video iframe { width:100%; max-width:900px; height:500px; border:none; }
-        .service-card { padding:20px; background:white; border-radius:8px; box-shadow:0 2px 10px rgba(0,0,0,0.1); }
+        body {
+            background-color: #0d1b2a;
+            color: #f1f1f1;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero-section {
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(180deg, #102542 0%, #0d1b2a 100%);
+        }
+
+        .logo {
+            max-width: 220px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .company-title {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            color: #bfc9d1;
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .content-section {
+            padding: 70px 20px;
+        }
+
+        .card-custom {
+            background-color: #13293d;
+            border: 1px solid #1f3b57;
+            border-radius: 16px;
+            padding: 30px;
+        }
+
+        .feature-box {
+            background-color: #13293d;
+            padding: 25px;
+            border-radius: 14px;
+            text-align: center;
+            height: 100%;
+            border: 1px solid #1f3b57;
+        }
+
+        .feature-box h5 {
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        .youtube-container iframe {
+            border-radius: 15px;
+            width: 100%;
+            min-height: 500px;
+        }
+
+        .footer {
+            background-color: #08131f;
+            padding: 35px 20px;
+            text-align: center;
+            border-top: 1px solid #1f3b57;
+        }
+
+        .footer p {
+            margin-bottom: 8px;
+        }
+
+        a {
+            color: #4db8ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #80d0ff;
+        }
+
+        @media (max-width: 768px) {
+            .company-title {
+                font-size: 2rem;
+            }
+
+            .youtube-container iframe {
+                min-height: 250px;
+            }
+        }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container text-center">
-            <img src="static/logo.jpeg" alt="Teerandaz Labs Logo" class="logo mb-3">
-            <h1>TEERANDAZ LABS LLP</h1>
-            <p class="tagline">PRECISION TECHNOLOGY</p>
-        </div>
-    </header>
-    <div class="hero">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
         <div class="container">
-            <h2 class="mb-4">Welcome to Teerandaz Labs</h2>
-            <div class="video mx-auto">
-                <iframe src="https://www.youtube.com/embed/i3NZxhVBQCs"
-                        title="Teerandaz Labs" allowfullscreen></iframe>
-            </div>
+
+            <!-- Replace logo.png with your actual logo -->
+            <img src="logo.png" alt="Teerandaz Labs Logo" class="logo img-fluid">
+
+            <h1 class="company-title">TEERANDAZ LABS LLP</h1>
+
+            <p class="tagline">Precision Technology</p>
+
         </div>
-    </div>
-    <div class="container my-5">
-        <div class="row justify-content-center g-4">
-            <!-- Embedded Systems -->
-            <div class="col-6 col-md-3">
-                <div class="service-card text-center">
-                    <img src="logo.jpeg" alt="Embedded" class="rounded-circle mb-2" style="width:100px;height:100px;object-fit:cover;">
-                    <h5>Embedded Systems</h5>
-                    <p class="small">Microcontroller-based solutions for real-time control. Our flagship <strong>Tankiwala System</strong> enables automatic water level monitoring and pump management for homes, farms & industries.</p>
-                </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="content-section">
+        <div class="container">
+
+            <div class="card-custom">
+
+                <h2 class="section-title">About Us</h2>
+
+                <p class="lead text-center">
+                    TEERANDAZ LABS LLP is a precision technology and engineering startup focused on intelligent automation,
+                    embedded systems, IoT solutions, and practical infrastructure technologies.
+                    The company develops and deploys systems aimed at solving real-world operational challenges through
+                    reliable hardware-software integration.
+                </p>
+
+                <br>
+
+                <p class="text-center">
+                    Its flagship initiative, the <strong>Tankiwala System</strong>, is designed for smart water filling
+                    management and automated pump control, helping optimize water usage, monitoring,
+                    and operational reliability across residential and commercial environments.
+                </p>
+
+                <p class="text-center">
+                    The company also provides B2B technical consultancy and development support in embedded systems,
+                    automation, sensing technologies, electrical systems, software integration,
+                    and custom engineering solutions.
+                </p>
+
             </div>
-            <!-- IoT -->
-            <div class="col-6 col-md-3">
-                <div class="service-card text-center">
-                    <img src="logo.jpeg" alt="IoT" class="rounded-circle mb-2" style="width:100px;height:100px;object-fit:cover;">
-                    <h5>IoT Solutions</h5>
-                    <p class="small">Connecting devices over internet for smart monitoring & control. Broad embedded-IoT systems for remote sensing, automation & data analytics.</p>
-                </div>
-            </div>
-            <!-- Electrical & Pumps -->
-            <div class="col-6 col-md-3">
-                <div class="service-card text-center">
-                    <img src="logo.jpeg" alt="Electrical" class="rounded-circle mb-2" style="width:100px;height:100px;object-fit:cover;">
-                    <h5>Electrical & Pumps</h5>
-                    <p class="small">Retail & supply of quality electrical items, submersible pumps, control panels, and accessories for residential, agricultural & industrial use.</p>
-                </div>
-            </div>
-            <!-- Software Development -->
-            <div class="col-6 col-md-3">
-                <div class="service-card text-center">
-                    <img src="logo.jpeg" alt="Software" class="rounded-circle mb-2" style="width:100px;height:100px;object-fit:cover;">
-                    <h5>Software Development</h5>
-                    <p class="small">Custom software, web & mobile apps, firmware development, and full-stack solutions tailored to business needs.</p>
-                </div>
-            </div>
-            <!-- Mentorship & Internship -->
-            <div class="col-12 col-md-6 mx-auto mt-4">
-                <div class="service-card text-center">
-                    <h5>Mentorship & Internship Programs</h5>
-                    <p class="small">Hands-on training in embedded systems, IoT, electronics, and software. Real projects, industry exposure & career guidance for students & freshers.</p>
-                </div>
-            </div>
+
         </div>
-    </div>
-    <footer class="bg-dark text-white text-center py-4">
-        teerandazlabs@gmail.com | +91-9993542791 | GSTIN: 12ABCDE3456F1Z5<br>
-        DPIIT Recognised • © 2026 Teerandaz Labs LLP
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="content-section pt-0">
+        <div class="container">
+
+            <h2 class="section-title">Core Areas</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <h5>Embedded Systems</h5>
+                        <p>Hardware and firmware solutions for intelligent systems.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <h5>IoT Solutions</h5>
+                        <p>Connected monitoring and automation infrastructure.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <h5>Electrical & Pumps</h5>
+                        <p>Smart water management and control technologies.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <h5>Software Development</h5>
+                        <p>Integrated software systems and technical consultancy.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOUNDER SECTION -->
+    <section class="content-section pt-0">
+        <div class="container">
+
+            <div class="card-custom">
+
+                <h2 class="section-title">Founder & CEO</h2>
+
+                <p class="text-center lead">
+                    <strong>Mehroz Azeem Khan</strong>
+                </p>
+
+                <p class="text-center">
+                    Computer Engineer and Inventor with a patent in firearms technology,
+                    focused on practical innovation, intelligent systems,
+                    and field-oriented engineering solutions.
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- YOUTUBE SECTION -->
+    <section class="content-section">
+        <div class="container">
+
+            <h2 class="section-title">Technology Demonstration</h2>
+
+            <div class="youtube-container">
+
+                <iframe
+                    src="https://www.youtube.com/embed/i3NZxhVBQCs"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <h5 class="mb-4">TEERANDAZ LABS LLP</h5>
+
+            <p>LLPIN: 11484804</p>
+
+            <p>GSTIN: 23AAZFT4154H1ZR</p>
+
+            <p>Email:
+                <a href="mailto:teerandazlabs@gmail.com">
+                    teerandazlabs@gmail.com
+                </a>
+            </p>
+
+            <p>Mobile / WhatsApp:
+                <a href="tel:+919993542791">
+                    +91-9993542791
+                </a>
+            </p>
+
+            <p class="mt-4 text-secondary">
+                © 2026 TEERANDAZ LABS LLP. All Rights Reserved.
+            </p>
+
+        </div>
+
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
